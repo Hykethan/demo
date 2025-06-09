@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI健康姿勢矯正 - 登入</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button style="background: none; border: none; cursor: pointer;">
+    <img src="image/set.png" alt="新增" class="setpng">
+  </button>
+
+  <!-- ✅ 加入表單 -->
+  <form method="POST" action="save_profile.php">
+    <div class="cin-box">
+      <div class="cin-item">
+        <h1>輸入資料</h1>
+      </div>
+    </div>
+    <hr class="divider">
+
+    <div class="data-box">
+      <div class="data-item">
+        <label>性別:</label>
+        <label class="gender-option">
+          <input type="radio" name="gender" value="male" required class="radio-big">男 ♂
+        </label>
+        <label class="gender-option">
+          <input type="radio" name="gender" value="female" class="radio-big">女 ♀
+        </label>
+      </div>
+      <div class="data-item">
+        <label for="name">姓名:</label>
+        <input type="text" id="name" name="name" class="cindata-input" placeholder="輸入姓名" required>
+      </div>
+      <div class="data-item">
+        <label for="age">年齡:</label>
+        <input type="number" id="age" name="age" class="cindata-input" placeholder="輸入年齡" required>
+      </div>
+      <div class="data-item">
+        <label for="height">身高:</label>
+        <input type="number" id="height" name="height" class="cindata-input" placeholder="輸入身高" required>
+      </div>
+      <div class="data-item">
+        <label for="weight">體重:</label>
+        <input type="number" id="weight" name="weight" class="cindata-input" placeholder="輸入體重" required>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button type="submit" class="button-add" style="position: relative; top: -40px;">
+        新增到個人資料
+      </button>
+    </div>
+  </form>
+</body>
+</html>

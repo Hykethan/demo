@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!-- 告訴瀏覽器這是一個 HTML5 文件 --> 
+<html lang="zh-Hant"> <!-- 網頁語言設定為繁體中文 -->
+<head>
+  <meta charset="UTF-8"> <!-- 設定字元編碼為 UTF-8，支援中文顯示 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 響應式設定，讓手機也能正常顯示 -->
+  <title>AI健康姿勢矯正 - 登入</title> <!-- 瀏覽器頁籤上顯示的標題 -->
+  <link rel="stylesheet" href="style.css"> <!-- 連結到外部的 CSS 檔案 -->
+</head>
+<body> <!-- 網頁內容的開始 -->
+  <form method="POST" action="logintest.php"> <!-- 將表單資料送到 login.php -->
+    <div class="container"> <!-- 建立一個主要容器，集中內容方便排版 -->
+      <h1>登入/註冊</h1> <!-- 主標題，顯示在頁面最上方 -->
+      <div class="login-box"> <!-- 登入表單區塊 -->
+        <div class="input-item">
+          <label for="account">帳號</label>
+          <input type="text" id="account" name="account" class="login-input" placeholder="請輸入帳號" required>
+        </div>
+        <div class="input-item">
+          <label for="password">密碼</label>
+          <input type="password" id="password" name="password" class="login-input" placeholder="請輸入密碼" required>
+        </div>
+      </div>
+      <div class="button-container">
+        <button type="submit" class="button-in">登入</button><!--送出表單-->
+        <button type="button" class="button-in" onclick="window.location.href='register.html'">註冊</button>
+      </div>
+      <div class="social-login">
+        <div class="social-login img">
+          <img src="image/fb.png" alt="Facebook" title="使用 Facebook 登入">
+          <img src="image/ge.png" alt="Google" title="使用 Google 登入">
+        </div>
+      </div>
+      <div class="loginbottom-box">
+        <button type="button" class="forgetpassword-button">忘記密碼？</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

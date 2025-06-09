@@ -1,0 +1,320 @@
+/* 設定整體的外觀 */
+body {
+  font-family: "Microsoft JhengHei", sans-serif; /* 使用微軟正黑體字型 */
+  margin: 0; /* 移除瀏覽器預設邊距 */
+  font-family: "Noto Sans TC", sans-serif; /* 使用 Noto Sans TC 字型，支援繁體中文 */
+  background-color: #575E63; /* 設定深灰色背景 */
+  display: flex; /* 使用 flexbox 排版 */
+  flex-direction: column; /* 元素垂直排列 */
+  align-items: center; /* 水平置中 */
+  justify-content: center; /* 垂直置中 */
+  height: 100vh; /* 頁面高度設為 100% 螢幕高度 */
+  color: white; /* 預設文字顏色為白色 */
+}
+.container{
+  margin-top: 170px;/* 添加上邊距，讓文字不會太靠近容器頂部 */
+  margin-bottom: 0px; /* 添加下邊距，讓文字和其他元素之間有空隙 */
+}
+/* 標題樣式 */
+h1 {
+  margin-top: -130px; /* 稍微往上 */
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+.join{ /*進入按鈕*/
+  padding-top: 120px; /* 增加內邊距使文字下移 */
+
+}
+.logopositon{
+  margin-top:-90px; /* 調整上方的空間 */
+  display: flex; /* 使用 Flexbox */
+  flex-direction: column; /* 讓子元素垂直排列 */
+  align-items: center; /* 水平置中 */
+  justify-content: flex-start; /* 讓元素從上方開始排列 */
+  gap:0px;
+}
+.logopositon img{
+  display: block;
+  margin-bottom: -50px; /* 拉近圖片間距 */
+}
+hr.divider {  /*水平線*/
+  border: 1.5px solid #999; /* 更粗的灰色實線 */
+  margin: 9px 0; /* 上下間距 */
+  width: 100%; /* 水平線長度 */
+}
+.setpng{ /*設置按鈕位置*/
+    width: 65px;
+    height: 45px;
+    position: absolute; /* 設定絕對定位 */
+    top: 5px; /* 往下移動 20px */
+    right:10px; /* 距離右邊 20px */
+}
+
+.p-data{     /*data-box裡的字*/
+  font-size: 24px;
+  font-weight: bold; /* 設定為粗體 */
+  margin-bottom: 70px; 
+}
+/* login page 專用樣式 */
+.login-box {
+  margin-top:80px; /* 調整上方的空間 */
+  margin-left: 1px; /* 調整左邊的空間 */
+  border: 2px solid white; /* 外框白色實線 */
+  border-radius: 30px; /* 邊角圓滑 */
+  padding: 30px; /* 內距 24px */
+  width: 280px; /* 寬度固定為 320px */
+  height:180px; /* 手動設定高度，根據內容調整 */
+  background-color: #6C7175; /* 背景為偏灰深色 */
+  display: flex; /* 使用 Flexbox */
+  flex-direction: column; /* 讓子元素垂直排列 */
+  align-items: center; /* 水平置中 */
+  justify-content: flex-start; /* 讓元素從上方開始排列 */
+}
+.main-box{
+  border: 2px solid white; /* 外框白色實線 */
+  border-radius: 38px; /* 邊角圓滑 */
+  padding: 30px; /* 內距 24px */
+  width: 280px; /* 寬度固定為 320px */
+  height:400px; /* 手動設定高度，根據內容調整 */
+  background-color: #898C8F; /* 背景為偏灰深色 */
+  display: flex; /* 使用 Flexbox */
+  flex-direction: column; /* 讓子元素垂直排列 */
+  align-items: center; /* 水平置中 */
+  justify-content: flex-start; /* 讓元素從上方開始排列 */
+  right:-3px;
+  position:relative;
+  bottom:10px;
+  top:25px;
+}
+.Function-box{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:40px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000; /* 確保蓋在其他上面 */
+  background-color: #6C7175; /* 背景為偏灰深色 */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* 向上偏移 2px、模糊半徑 5px 的黑色透明陰影，營造浮起來的效果 */
+}
+.contain button{
+  background: none; 
+  border: none; 
+  cursor: pointer;
+  position: relative;
+}
+.cin-box{    /*原本的h1 css位置會錯亂 所以要設置一個專門的*/
+  margin-top: -15px; /* 往下推 30 像素，可自行調整數值 */
+  border: 2px solid white; /* 外框白色實線 */
+  border-radius: 20px; /* 邊角圓滑 */
+  padding: 13px; /* 內距 24px */
+  width: 150px; /* 寬度固定為 320px */
+  background-color: #62656b; /* 背景為偏灰深色 */
+  display: flex; /* 使用 Flexbox */
+  flex-direction: column; /* 讓子元素垂直排列 */
+  align-items: center; /* 水平置中 */
+  justify-content: flex-start; /* 讓元素從上方開始排列 */
+
+}
+.cin-item h1{
+  font-size:28px;
+  text-align: center; /* 最簡單方式，讓 h1 內容水平置中 */
+  margin: 0; /* 清除預設 margin，避免超出框線 */
+}
+.data-box{
+  border: 2px solid white; /* 外框白色實線 */
+  border-radius: 15px; /* 邊角圓滑 */
+  padding: 30px; /* 內距 24px */
+  width: 292px; /* 寬度固定為 320px */
+  height:365px; /* 手動設定高度，根據內容調整 */
+  background-color: #898C8F; /* 背景為偏灰深色 */
+}
+
+label {                   /*label字體*/
+  display: block; /* 單獨一行顯示 */
+  margin-bottom: 8px; /* 與輸入框間距 8px */
+  font-size: 20px; /* 字體大小 18px */
+  font-family: "Microsoft JhengHei", sans-serif; /* 使用微軟正黑體字型 */
+  font-weight: bold; /* 設置字體為粗體 */
+}
+/* 設置 .input-group 為 flex 容器，使 label 和 input 在同一行 */
+.input-item {
+  display: flex;            /* 使用 Flexbox 排列元素 */
+  align-items: center;      /* 垂直置中對齊 */
+  margin-bottom: 80px;      /* 每個輸入欄位的底部留些距離 */
+}
+
+.input-item label { 
+  margin-right: 10px;       /* label 和 input 之間的間距 */
+  white-space: nowrap;   /* 防止文字換行 */
+  font-size: 30px;
+}
+.data-item{
+  display: flex;            /* 使用 Flexbox 排列元素 */
+  align-items: center;      /* 垂直置中對齊 */
+  margin-bottom: 35px;      /* 每個輸入欄位的底部留些距離 */
+  margin-left:-15px;
+}
+.data-item label{
+  margin-right: 5px;       /* label 和 input 之間的間距 */
+  white-space: nowrap;   /* 防止文字換行 */
+  font-size:25px;
+}
+.main-item{
+width: 138px;               /* 元素的寬度設定為 140 像素 */
+height: 140px;              /* 元素的高度設定為 140 像素 */
+background-color: #fefcf5;  /* 元素的背景顏色設定為淡米色 (#fefcf5) */
+border: 2px solid black;    /* 元素的邊框為 2 像素實線，顏色為黑色 */
+border-radius: 20px;        /* 邊框圓角半徑設定為 20 像素，使邊角變圓滑 */
+display: flex;              /* 將元素設為彈性盒模型 (flexbox)，方便排列子元素 */
+flex-direction: column;     /* 子元素排列方向為直向 (垂直排列) */
+align-items: center;        /* 子元素在主軸的交叉軸（水平方向）置中對齊 */
+justify-content: center;    /* 子元素在主軸（垂直方向）置中對齊 */
+font-weight: bold;          /* 文字字重設定為粗體 */
+text-align: center;         /* 文字置中對齊 */
+}
+.main-item2{
+width: 300px;               /* 元素的寬度設定為 140 像素 */
+height: 120px;              /* 元素的高度設定為 140 像素 */
+background-color: #fefcf5;  /* 元素的背景顏色設定為淡米色 (#fefcf5) */
+border: 2px solid black;    /* 元素的邊框為 2 像素實線，顏色為黑色 */
+border-radius: 20px;        /* 邊框圓角半徑設定為 20 像素，使邊角變圓滑 */
+display: flex;              /* 將元素設為彈性盒模型 (flexbox)，方便排列子元素 */
+flex-direction: column;     /* 子元素排列方向為直向 (垂直排列) */
+align-items: center;        /* 子元素在主軸的交叉軸（水平方向）置中對齊 */
+justify-content: center;    /* 子元素在主軸（垂直方向）置中對齊 */
+font-weight: bold;          /* 文字字重設定為粗體 */
+text-align: center;         /* 文字置中對齊 */
+}
+.contain{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  position: relative;
+  bottom:10px;
+}
+.contain img{
+  width: 70px;
+}
+.row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+.login-input {
+  padding: 20px;             /* 輸入框內部間距 */
+  margin-top: -10px;/* 調整上方的空間 */
+  margin-left: 10px; /* 調整右邊的空間 */
+  border: 1px solid black; /* 外框白色實線 */
+  width: 210px; /* 輸入框寬度滿版 */
+  padding: 12px; /* 內距 10px */
+  border-radius: 10px; /* 圓角邊框 */
+  margin-bottom: 0px; /* 底部間距 20px */
+  font-size: 18px; /* 文字大小 */
+}
+.cindata-input{
+  padding: 20px;             /* 輸入框內部間距 */
+  border:1px solid black;
+  margin-top: -10px;/* 調整上方的空間 */
+  margin-left: 10px; /* 調整右邊的空間 */
+  padding: 12px; /* 內距 10px */
+  border-radius: 10px; /* 圓角邊框 */
+  margin-bottom: 0px; /* 底部間距 20px */
+  font-size: 18px; /* 文字大小 */
+  width: 260px; /* 輸入框寬度滿版 */
+}
+/* 調整 button-container 設置 */
+.button-container {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center; /* 垂直置中 */
+  gap: 20px; /* 按鈕間距 */
+  width: 100%; /* 讓 .button-container 寬度滿版 */
+  margin-top: 50px; /* 根據需要調整距離 */
+}
+.button-logo{
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: bold; /* 設置字體為粗體 */
+  color:black; /* 指定文字顏色為黑色 */
+}
+.button-in {    /*登入註冊按鈕*/
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 20px;
+  font-weight: bold; /* 設置字體為粗體 */
+  color:black; /* 指定文字顏色為黑色 */
+}
+.button-add {    /*登入註冊按鈕*/
+  background-color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 999px;
+  font-size: 17px;
+  color:black; /* 指定文字顏色為黑色 */
+  font-weight: bold; /* 設置字體為粗體 */
+}
+
+.social-login { /*社交登入按鈕*/
+  display:flex; /* 使用 flex 排版 */
+  justify-content: center; /* 元素置中 */
+  gap:45px; /* 圖示間距為 20px */
+  margin-bottom:80px; /* 與下方區塊距離 20px */
+  margin-top: 10px; /* 根據需要調整距離 */
+}
+
+.social-login img {
+  width: 60px; /* 圖示寬度 */
+  height: 60px; /* 圖示高度 */
+}
+
+/* 忘記密碼連結樣式 */
+.loginbottom-box{ /* logim介面底部的框 */
+  background-color: #6C7175;
+  border-radius: 10px;
+  width: 100%;
+  height: 55px; /* 根據內容自動調整高度 */
+  padding:0; /* 控制框的上下內邊距 */
+  position: fixed; /* 固定位置 */
+  bottom: 5px; /* 距離頁面底部 30px，可以根據需要調整 */
+  left: 0; /* 從頁面左邊開始 */
+  z-index: 1000; /* 保證框不會被其他元素遮住 */
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+.forgetpassword-button{
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: bold; /* 設置字體為粗體 */
+  color:black; /* 指定文字顏色為黑色 */
+}
+.gender-option {
+  margin-left: 15px;
+  margin-right: 10px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  
+}
+.radio-big {
+  transform: scale(1.5); /* 放大 1.5 倍 */
+  margin-right: 10px;    /* 和文字拉開距離 */
+  cursor: pointer;       /* 滑鼠變成點選手指 */
+}
